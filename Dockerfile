@@ -13,4 +13,4 @@ RUN rm -rf photogenic photogenic.zip
 
 # Configure the HTTP server
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
-EXPOSE 8
+EXPOSE 8 22
