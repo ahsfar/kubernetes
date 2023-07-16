@@ -1,7 +1,9 @@
 FROM centos:latest
 LABEL maintainer="ahsfar21@gmail.com"
 
-# Install required packages
+################################
+#testing
+# Install required packages 
 RUN yum install -y httpd zip unzip
 
 # Download and extract the website files
@@ -13,4 +15,4 @@ RUN rm -rf photogenic photogenic.zip
 
 # Configure the HTTP server
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
-EXPOSE 8 22
+EXPOSE 80 22
